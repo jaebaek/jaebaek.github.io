@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <style type="text/css" media="all">
+@media print {
+    a[href]:after {
+        content: none !important;
+    }
+} 
+    </style>
   </head>
 
   <body>
@@ -17,13 +25,13 @@
     <div class="container" style="max-width: 800px;">
       <div class="page-header">
         <h1>Jaebaek Seo</h1>
-        <p style="font-size: 24px;">Software engineer at Google</p>
+        <p style="font-size: 24px;">Senior software engineer at Google</p>
       </div>
       <div class="row g-5">
           <div class="col-md-6 text-bottom">
             <h3><b>Team</b></h3>
-            <p style="font-size: 20px;">Google Vulkan shader compiler team</p>
-            <p style="font-size: 20px;">Location: Waterloo, Ontario, Canada</p>
+            <p style="font-size: 20px;">Kotlin compiler/IDE team</p>
+            <p style="font-size: 20px;">Location: Kirkland, WA, US</p>
           </div>
           <div class="col-md-6 text-bottom">
             <h3><b>Contact</b></h3>
@@ -31,39 +39,54 @@
             <p style="font-size: 20px;">or yequallnx at gmail.com</p>
             <p style="font-size: 20px;">GitHub: <a href="https://github.com/jaebaek">https://github.com/jaebaek</a></p>
           </div>
-          <div class="col-md-12" style="margin-top: 20px;">
-            <p style="font-size: 16px;">My wife has <b>U.S. citizenship</b> and she can support my visa.</p>
-          </div>
+      </div>
+
+      <hr>
+      <h3><b>Education</b></h3>
+      <div class="row" style="margin-left: 20px; margin-bottom: 20px;">
+        <p style="font-size: 18px;">Ph.D. from Computer Science, KAIST <i>Mar 2013 - Aug 2017</i></p>
+        <p style="font-size: 18px;">M.S. from Computer Science, KAIST <i>Mar 2011 - Feb 2013</i></p>
+        <p style="font-size: 18px;">B.S. from Computer Science, KAIST <i>Mar 2006 - Aug 2010</i></p>
+        <p style="font-size: 16px;">(KAIST stands for Korea Advanced Institute of Science and Technology.)</p>
       </div>
 
       <hr>
       <h3><b>Work Experience</b></h3>
       <div class="row" style="margin-left: 20px; margin-bottom: 20px;">
           <p style="font-size: 20px;">
-              <strong>Google, Vulkan shader compiler team (Mar 2018 ~ present)</strong>
+              <strong>Google, Kotlin compiler/IDE team (Jun 2022 ~ present)</strong>
           </p>
           <p>
               <ul>
                   <li style="font-size: 18px;">
-                    <strong>Tech lead</strong>
-                      <a href="https://github.com/Microsoft/DirectXShaderCompiler">
-                          DXC </a> SPIR-V code gen (Feb 2021 ~ present)
+                      Adopting K2 compiler front-end (e.g., reference-resolver/type analysis) to IDE.
                   </li>
                   <li style="font-size: 18px;">
-                    <strong>Lead</strong>
-                    compiler part of Vulkan (SPIR-V) shader debugger project
+                      K2 compiler front-end maintenance e.g., reference shortener, fixing reference resolver bugs.
                   </li>
                   <li style="font-size: 18px;">
-                    Major contributor of Vulkan backend of
-                    <a href="https://github.com/google/Amber">
-                      Amber </a> (Vulkan shader testing framework used by Vulkan CTS)
+                      Migrating K2 compiler front-end to Android Studio.
+                  </li>
+              </ul>
+          </p>
+      </div>
+      <div class="row" style="margin-left: 20px; margin-bottom: 20px;">
+          <p style="font-size: 20px;">
+              <strong>Google, Vulkan shader compiler team (Mar 2018 ~ May 2022)</strong>
+          </p>
+          <p>
+              <ul>
+                  <li style="font-size: 18px;">
+                      <a href="https://github.com/Microsoft/DirectXShaderCompiler">DXC</a>: HLSL to SPIR-V compiler based on Clang (136 <a href="https://github.com/microsoft/DirectXShaderCompiler/pulls?q=is%3Apr+author%3Ajaebaek+">PRs</a>, TL Feb/2021 - May/2022).
                   </li>
                   <li style="font-size: 18px;">
-                    Github commits: 115+ <a href="https://github.com/microsoft/DirectXShaderCompiler/pulls?q=is%3Apr+author%3Ajaebaek+">DXC PRs</a>,
-                    77+ <a href="https://github.com/KhronosGroup/SPIRV-Tools/pulls?q=is%3Apr+author%3Ajaebaek+">spirv-opt/spirv-val PRs</a>
+                      TL compiler part of Vulkan shader debugger: debug info generation from front-end compiler, preservation through all optimization passes.
                   </li>
                   <li style="font-size: 18px;">
-                    Major revision of <a href="https://www.khronos.org/registry/SPIR-V/specs/unified1/OpenCL.DebugInfo.100.html">OpenCL.DebugInfo.100</a> (SPIR-V Extended Instruction Set for debug info)
+                      <a href="https://github.com/KhronosGroup/SPIRV-Tools">spirv-opt</a>: SPIR-V optimization passes (80 <a href="https://github.com/KhronosGroup/SPIRV-Tools/pulls?q=is%3Apr+author%3Ajaebaek+">spirv-opt/spirv-val PRs</a>).
+                  </li>
+                  <li style="font-size: 18px;">
+                      Others: SPIR-V extension specs e.g., <a href="https://www.khronos.org/registry/SPIR-V/specs/unified1/OpenCL.DebugInfo.100.html">OpenCL.DebugInfo.100</a>, and shader testing tools (62 <a href="https://github.com/google/amber/commits?author=jaebaek">Amber commits</a>).
                   </li>
               </ul>
           </p>
@@ -86,16 +109,7 @@
       </div>
 
       <hr>
-      <h3><b>Education</b></h3>
-      <div class="row" style="margin-left: 20px; margin-bottom: 20px;">
-        <p style="font-size: 18px;">Ph.D. from Computer Science, KAIST <i>Mar 2013 - Aug 2017</i></p>
-        <p style="font-size: 18px;">M.S. from Computer Science, KAIST <i>Mar 2011 - Feb 2013</i></p>
-        <p style="font-size: 18px;">B.S. from Computer Science, KAIST <i>Mar 2006 - Aug 2010</i></p>
-        <p style="font-size: 16px;">(KAIST stands for Korea Advanced Institute of Science and Technology.)</p>
-      </div>
-
-      <hr>
-      <h3><b>Academic Research</b></h3>
+      <h3><b>Research</b></h3>
       <div class="row" style="margin-left: 20px; margin-bottom: 20px;">
           <p style="font-size: 16px;">
               <a href="https://www.cs.purdue.edu/homes/pfonseca/papers/ndss21-chancel.pdf">
